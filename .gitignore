@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Xcode / SwiftPM build output (regenerated)
+DerivedData/
+.build/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/swiftpm/
+
+# Logs
+*.log

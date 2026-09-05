@@ -1,0 +1,46 @@
+name: LiDARLinkMac
+options:
+  bundleIdPrefix: com.lidarlink
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    ARCHS: arm64
+    MARKETING_VERSION: "2.0.0"
+    CURRENT_PROJECT_VERSION: "2"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_APP_SANDBOX: NO
+targets:
+  LiDARLinkMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: LiDARLinkMac
+    info:
+      path: LiDARLinkMac/Info.plist
+      properties:
+        CFBundleDisplayName: LiDAR Link
+        CFBundleShortVersionString: "2.0.0"
+        CFBundleVersion: "2"
+        NSLocalNetworkUsageDescription: "LiDAR Link advertises a local Bonjour service so your iPhone can connect and stream scans. Scan data never leaves your local network."
+        NSBonjourServices:
+          - _lidarlink._tcp
+        LSMinimumSystemVersion: "26.0"
+    dependencies:
+      - package: LiDARLinkShared
+packages:
+  LiDARLinkShared:
+    path: ../LiDARLinkShared
+schemes:
+  LiDARLinkMac:
+    build:
+      targets:
+        LiDARLinkMac: all
+    run:
+      config: Debug

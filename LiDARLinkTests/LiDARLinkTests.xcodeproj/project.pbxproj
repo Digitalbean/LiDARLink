@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B37F2631EC069F24B4D8699 /* PointIndexNormalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D388C61F702A08AB9624E213 /* PointIndexNormalTests.swift */; };
+		0B463E02B20610A0719D484C /* TSDFVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD60D25F08A6C5B17A42AB /* TSDFVolumeTests.swift */; };
+		0C22BF53207577A3B7908A03 /* PointCloudCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D6C9DF1FC8797936D549AE /* PointCloudCleanerTests.swift */; };
+		124A8B1C5C674646E4E3A5D9 /* SequenceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253493FEE8A097BDBACFC46 /* SequenceTrackerTests.swift */; };
+		1A468286E62C4FF5CD826141 /* PoseGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194349713F395043945E122 /* PoseGraphTests.swift */; };
+		1AA9B0AB5BE474AD327612E3 /* ObjectPhotoPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25DC69FF7897F8ED1ED19B /* ObjectPhotoPayloadTests.swift */; };
+		21882416C86477533C96ED02 /* MeshSimplifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C92CE2890C5D279C1C07D /* MeshSimplifierTests.swift */; };
+		25429431B6229E183F406ED1 /* SupportMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98F66F793575C3944641F2 /* SupportMessageTests.swift */; };
+		27A45C3C91F62F9E62B615DB /* PoseMatcherWarmupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66083517E1C8FCA7AC1CCA7 /* PoseMatcherWarmupTests.swift */; };
+		2AB3E359C6EA17AEA99CC2D1 /* SurfelMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7336237C97286A0F818187 /* SurfelMapTests.swift */; };
+		2B1DA91163FD7469D466E977 /* PoseRefinerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E623EAD1106299C089D20 /* PoseRefinerTests.swift */; };
+		311535D18155F9D0007A9CC6 /* PlanePolygonBoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25719C9B05470CD10CF33B33 /* PlanePolygonBoundTests.swift */; };
+		3966FD2BA5A4EBDEDFDD0DAE /* TextureBakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665823CDCDC5197981F45861 /* TextureBakerTests.swift */; };
+		3B5D77A24822DD4CD3BBF225 /* MarchingCubesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638420580CEFF168AF12AC6D /* MarchingCubesTests.swift */; };
+		408454EB50045976C7A80C9A /* SurfelExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C355EB9C78FBA3AC48685D4 /* SurfelExtractorTests.swift */; };
+		4168E22DC180FD3505C9C7E7 /* DepthSmootherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6F6DC3643388EA3EA69BEE /* DepthSmootherTests.swift */; };
+		416FDA6D77E4AB6710D7AE07 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A35D1F548F3ECBD1C018C8 /* TestSupport.swift */; };
+		5435D05EE056BA946552F0A2 /* LiveDriftCorrectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20DB9FE15FBCD2F20B4072 /* LiveDriftCorrectorTests.swift */; };
+		58CBBA7BB5551EE791F900F4 /* ScanEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395E9674EFA4F9C854E6420 /* ScanEngineTests.swift */; };
+		5FA54F1BA111CC0F9A982B85 /* ExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64443376760B54BD7F186069 /* ExportTests.swift */; };
+		63505472C9AE202D65DB8188 /* ProgressiveMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2814FB9ED9D0746F52BD32E /* ProgressiveMapTests.swift */; };
+		660557D080E2FC4FC289B672 /* PointColorizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B18EADEC7596DB9B415E3 /* PointColorizerTests.swift */; };
+		69162A7CC887B20AD5982277 /* PoseMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACDC84FEF98781C4DE7B04 /* PoseMathTests.swift */; };
+		69C766DC02F8A37FF2590BBF /* SurfelAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E843BA9103FAC9F589E3F /* SurfelAOTests.swift */; };
+		6B1AE6B3BD46CC70F32A8217 /* PlaneQuantizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64701A3E9BFE57083FD20F1 /* PlaneQuantizerTests.swift */; };
+		855F1D52C5FFBCC4048B4ABC /* RoomStructureCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41076AAA5BFB35AA9E9A57B7 /* RoomStructureCodecTests.swift */; };
+		8701430D6B8AE19ED307ABCD /* WireCompressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E152CF9EC9AA370FD3842 /* WireCompressionTests.swift */; };
+		8804CC8BFC5A7F63730FBFC5 /* RichPointCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE318917B05B3855968685A /* RichPointCloudTests.swift */; };
+		890EC90580397FE792674FD9 /* MotionGateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F1487BEF1FDF48DE92278 /* MotionGateTests.swift */; };
+		8BDBA16E9C28F68028197061 /* SurfelEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A67A6BB51E31899EBB9F63E /* SurfelEngineTests.swift */; };
+		8E0958C976E67626D89365E2 /* LoopbackStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8CC6E718E35A8D81590E4 /* LoopbackStreamTests.swift */; };
+		8EB793141290A45EEEE1D335 /* SurfelDebtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC943E2B4D2FE5542735E81D /* SurfelDebtTests.swift */; };
+		9189198A35B5BB496364876E /* SurfelCompactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82402CC30A1E1275E0801A02 /* SurfelCompactTests.swift */; };
+		92B7A4F313CF0D5E01B7EAA5 /* MeshDecimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFA60B76FCC33780E793CAF /* MeshDecimatorTests.swift */; };
+		9560894944761EB28BFD970E /* CornerExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF10000337D7D2C8BC72DA0 /* CornerExtractorTests.swift */; };
+		9767BE79B76F5EAEB069BEF9 /* MessageCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD8A464BBD390A99E23BD /* MessageCodecTests.swift */; };
+		990C3104DDAD4DD1A51CCE8B /* LoopClosureDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A3B6A8A25A261DB07A751 /* LoopClosureDetectorTests.swift */; };
+		996EBE2152B6E04D4F3FED56 /* LatestWinsQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1049164B64875568E3875B /* LatestWinsQueueTests.swift */; };
+		9C219EAE83183AC0E5F0FDFB /* DeformationGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9092FCDD54B0B0316BFEB178 /* DeformationGraphTests.swift */; };
+		A021208A9581CD0363E51BF4 /* SurfelMesherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAF0EE0F13A3E0328276E0 /* SurfelMesherTests.swift */; };
+		A045A84F57DC26AA975CBA81 /* FrameAssemblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128887B9E1020F96562C0321 /* FrameAssemblerTests.swift */; };
+		A575544F440B294384C15F85 /* SurfelRefinementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D72A41E9BA3A5FA7985C /* SurfelRefinementTests.swift */; };
+		A7D58FC59207BE54C987F848 /* ProgressiveMapLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99556A739CBFB9007C419E54 /* ProgressiveMapLifecycleTests.swift */; };
+		ADF04FA340EBE1A2B33F618A /* V2ReconstructionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEADE8A2057BE35713C0CA2 /* V2ReconstructionTests.swift */; };
+		AE6A7C6E167C966B91D04CEB /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DCD809AE4249314524908 /* StorageTests.swift */; };
+		B22A5A399A85DD42C7FF7951 /* DepthEdgeFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772DB8C1691DF9A76C75C801 /* DepthEdgeFilterTests.swift */; };
+		B8AF230726D5B84B0FCA32AA /* MeshChunkAssemblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04FB950613EB42A90293513 /* MeshChunkAssemblerTests.swift */; };
+		BD498347CB10941ED5ECD810 /* KeyframeDescriptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E573C2ABC89F5EEF5ADE78 /* KeyframeDescriptorTests.swift */; };
+		C471E0A13B34B14E08B92DE6 /* DepthDownsamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B600F83E9227D69165DFCC /* DepthDownsamplerTests.swift */; };
+		C56CCF843BC4BED6CBF5591B /* ViewNavigationMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479A36B084C87097E2716C6 /* ViewNavigationMathTests.swift */; };
+		C611A527D19815CE748EF39F /* SurfelDelightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28649737F204BAE78A8CE96C /* SurfelDelightTests.swift */; };
+		CA1DD63DA47FD11A470BFA25 /* DepthCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D008D533E4019B5D87D41D /* DepthCleanerTests.swift */; };
+		DA1315B809F3C1999AAE9112 /* ReconstructionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1ADD2A78CABA1BFEBB757 /* ReconstructionEngineTests.swift */; };
+		E5543B92882E8DEF1B575BDD /* PointCloudAccumulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49352F9585D055B0567352 /* PointCloudAccumulatorTests.swift */; };
+		F224B4173E8046C5A2497463 /* LiDARLinkShared in Frameworks */ = {isa = PBXBuildFile; productRef = 38B9DBEB1EB8EF203311D805 /* LiDARLinkShared */; };
+		F48F78440815F9E53427F2B6 /* ProgressiveMapCarveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2663C6E8D498648DC39F8F /* ProgressiveMapCarveTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0253493FEE8A097BDBACFC46 /* SequenceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTrackerTests.swift; sourceTree = "<group>"; };
+		08ACDC84FEF98781C4DE7B04 /* PoseMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseMathTests.swift; sourceTree = "<group>"; };
+		10D6C9DF1FC8797936D549AE /* PointCloudCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudCleanerTests.swift; sourceTree = "<group>"; };
+		128887B9E1020F96562C0321 /* FrameAssemblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameAssemblerTests.swift; sourceTree = "<group>"; };
+		13B6D72A41E9BA3A5FA7985C /* SurfelRefinementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelRefinementTests.swift; sourceTree = "<group>"; };
+		163E843BA9103FAC9F589E3F /* SurfelAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelAOTests.swift; sourceTree = "<group>"; };
+		17E573C2ABC89F5EEF5ADE78 /* KeyframeDescriptorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeDescriptorTests.swift; sourceTree = "<group>"; };
+		1A98F66F793575C3944641F2 /* SupportMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMessageTests.swift; sourceTree = "<group>"; };
+		2395E9674EFA4F9C854E6420 /* ScanEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEngineTests.swift; sourceTree = "<group>"; };
+		25719C9B05470CD10CF33B33 /* PlanePolygonBoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanePolygonBoundTests.swift; sourceTree = "<group>"; };
+		28649737F204BAE78A8CE96C /* SurfelDelightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelDelightTests.swift; sourceTree = "<group>"; };
+		2D2663C6E8D498648DC39F8F /* ProgressiveMapCarveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveMapCarveTests.swift; sourceTree = "<group>"; };
+		368E3F9BB79F65470966A37D /* LiDARLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiDARLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6DCD809AE4249314524908 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		3B6F6DC3643388EA3EA69BEE /* DepthSmootherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthSmootherTests.swift; sourceTree = "<group>"; };
+		3E6C92CE2890C5D279C1C07D /* MeshSimplifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshSimplifierTests.swift; sourceTree = "<group>"; };
+		41076AAA5BFB35AA9E9A57B7 /* RoomStructureCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStructureCodecTests.swift; sourceTree = "<group>"; };
+		4A20DB9FE15FBCD2F20B4072 /* LiveDriftCorrectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDriftCorrectorTests.swift; sourceTree = "<group>"; };
+		4D7F1487BEF1FDF48DE92278 /* MotionGateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionGateTests.swift; sourceTree = "<group>"; };
+		4EF10000337D7D2C8BC72DA0 /* CornerExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerExtractorTests.swift; sourceTree = "<group>"; };
+		507A3B6A8A25A261DB07A751 /* LoopClosureDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopClosureDetectorTests.swift; sourceTree = "<group>"; };
+		57A35D1F548F3ECBD1C018C8 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		5C355EB9C78FBA3AC48685D4 /* SurfelExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelExtractorTests.swift; sourceTree = "<group>"; };
+		5D5F29A478BBC659F1FF362B /* LiDARLinkShared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LiDARLinkShared; path = ../LiDARLinkShared; sourceTree = SOURCE_ROOT; };
+		616B18EADEC7596DB9B415E3 /* PointColorizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointColorizerTests.swift; sourceTree = "<group>"; };
+		638420580CEFF168AF12AC6D /* MarchingCubesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarchingCubesTests.swift; sourceTree = "<group>"; };
+		64443376760B54BD7F186069 /* ExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportTests.swift; sourceTree = "<group>"; };
+		665823CDCDC5197981F45861 /* TextureBakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureBakerTests.swift; sourceTree = "<group>"; };
+		67D008D533E4019B5D87D41D /* DepthCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthCleanerTests.swift; sourceTree = "<group>"; };
+		6A67A6BB51E31899EBB9F63E /* SurfelEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelEngineTests.swift; sourceTree = "<group>"; };
+		7194349713F395043945E122 /* PoseGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGraphTests.swift; sourceTree = "<group>"; };
+		76B600F83E9227D69165DFCC /* DepthDownsamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthDownsamplerTests.swift; sourceTree = "<group>"; };
+		76FBD8A464BBD390A99E23BD /* MessageCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCodecTests.swift; sourceTree = "<group>"; };
+		772DB8C1691DF9A76C75C801 /* DepthEdgeFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEdgeFilterTests.swift; sourceTree = "<group>"; };
+		7FDD60D25F08A6C5B17A42AB /* TSDFVolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSDFVolumeTests.swift; sourceTree = "<group>"; };
+		82402CC30A1E1275E0801A02 /* SurfelCompactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelCompactTests.swift; sourceTree = "<group>"; };
+		897E152CF9EC9AA370FD3842 /* WireCompressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireCompressionTests.swift; sourceTree = "<group>"; };
+		8EFA60B76FCC33780E793CAF /* MeshDecimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDecimatorTests.swift; sourceTree = "<group>"; };
+		9092FCDD54B0B0316BFEB178 /* DeformationGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeformationGraphTests.swift; sourceTree = "<group>"; };
+		99556A739CBFB9007C419E54 /* ProgressiveMapLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveMapLifecycleTests.swift; sourceTree = "<group>"; };
+		9AFAF0EE0F13A3E0328276E0 /* SurfelMesherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelMesherTests.swift; sourceTree = "<group>"; };
+		A22E623EAD1106299C089D20 /* PoseRefinerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseRefinerTests.swift; sourceTree = "<group>"; };
+		AB25DC69FF7897F8ED1ED19B /* ObjectPhotoPayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPhotoPayloadTests.swift; sourceTree = "<group>"; };
+		ACEADE8A2057BE35713C0CA2 /* V2ReconstructionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ReconstructionTests.swift; sourceTree = "<group>"; };
+		B479A36B084C87097E2716C6 /* ViewNavigationMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationMathTests.swift; sourceTree = "<group>"; };
+		BCE318917B05B3855968685A /* RichPointCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichPointCloudTests.swift; sourceTree = "<group>"; };
+		CA7336237C97286A0F818187 /* SurfelMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelMapTests.swift; sourceTree = "<group>"; };
+		CD49352F9585D055B0567352 /* PointCloudAccumulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudAccumulatorTests.swift; sourceTree = "<group>"; };
+		CE1049164B64875568E3875B /* LatestWinsQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestWinsQueueTests.swift; sourceTree = "<group>"; };
+		D388C61F702A08AB9624E213 /* PointIndexNormalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointIndexNormalTests.swift; sourceTree = "<group>"; };
+		E04FB950613EB42A90293513 /* MeshChunkAssemblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshChunkAssemblerTests.swift; sourceTree = "<group>"; };
+		E2814FB9ED9D0746F52BD32E /* ProgressiveMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveMapTests.swift; sourceTree = "<group>"; };
+		E9E1ADD2A78CABA1BFEBB757 /* ReconstructionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructionEngineTests.swift; sourceTree = "<group>"; };
+		EC943E2B4D2FE5542735E81D /* SurfelDebtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfelDebtTests.swift; sourceTree = "<group>"; };
+		F5C8CC6E718E35A8D81590E4 /* LoopbackStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackStreamTests.swift; sourceTree = "<group>"; };
+		F64701A3E9BFE57083FD20F1 /* PlaneQuantizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneQuantizerTests.swift; sourceTree = "<group>"; };
+		F66083517E1C8FCA7AC1CCA7 /* PoseMatcherWarmupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseMatcherWarmupTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E385760263E7F666361EC128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F224B4173E8046C5A2497463 /* LiDARLinkShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14D70809F3830A6ED98B8C8B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5D5F29A478BBC659F1FF362B /* LiDARLinkShared */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5B90C5758F948C036B337620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368E3F9BB79F65470966A37D /* LiDARLinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8015F4633E1FB036BCB51960 /* LiDARLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EF10000337D7D2C8BC72DA0 /* CornerExtractorTests.swift */,
+				9092FCDD54B0B0316BFEB178 /* DeformationGraphTests.swift */,
+				67D008D533E4019B5D87D41D /* DepthCleanerTests.swift */,
+				76B600F83E9227D69165DFCC /* DepthDownsamplerTests.swift */,
+				772DB8C1691DF9A76C75C801 /* DepthEdgeFilterTests.swift */,
+				3B6F6DC3643388EA3EA69BEE /* DepthSmootherTests.swift */,
+				64443376760B54BD7F186069 /* ExportTests.swift */,
+				128887B9E1020F96562C0321 /* FrameAssemblerTests.swift */,
+				17E573C2ABC89F5EEF5ADE78 /* KeyframeDescriptorTests.swift */,
+				CE1049164B64875568E3875B /* LatestWinsQueueTests.swift */,
+				4A20DB9FE15FBCD2F20B4072 /* LiveDriftCorrectorTests.swift */,
+				F5C8CC6E718E35A8D81590E4 /* LoopbackStreamTests.swift */,
+				507A3B6A8A25A261DB07A751 /* LoopClosureDetectorTests.swift */,
+				638420580CEFF168AF12AC6D /* MarchingCubesTests.swift */,
+				E04FB950613EB42A90293513 /* MeshChunkAssemblerTests.swift */,
+				8EFA60B76FCC33780E793CAF /* MeshDecimatorTests.swift */,
+				3E6C92CE2890C5D279C1C07D /* MeshSimplifierTests.swift */,
+				76FBD8A464BBD390A99E23BD /* MessageCodecTests.swift */,
+				4D7F1487BEF1FDF48DE92278 /* MotionGateTests.swift */,
+				AB25DC69FF7897F8ED1ED19B /* ObjectPhotoPayloadTests.swift */,
+				25719C9B05470CD10CF33B33 /* PlanePolygonBoundTests.swift */,
+				F64701A3E9BFE57083FD20F1 /* PlaneQuantizerTests.swift */,
+				CD49352F9585D055B0567352 /* PointCloudAccumulatorTests.swift */,
+				10D6C9DF1FC8797936D549AE /* PointCloudCleanerTests.swift */,
+				616B18EADEC7596DB9B415E3 /* PointColorizerTests.swift */,
+				D388C61F702A08AB9624E213 /* PointIndexNormalTests.swift */,
+				7194349713F395043945E122 /* PoseGraphTests.swift */,
+				F66083517E1C8FCA7AC1CCA7 /* PoseMatcherWarmupTests.swift */,
+				08ACDC84FEF98781C4DE7B04 /* PoseMathTests.swift */,
+				A22E623EAD1106299C089D20 /* PoseRefinerTests.swift */,
+				2D2663C6E8D498648DC39F8F /* ProgressiveMapCarveTests.swift */,
+				99556A739CBFB9007C419E54 /* ProgressiveMapLifecycleTests.swift */,
+				E2814FB9ED9D0746F52BD32E /* ProgressiveMapTests.swift */,
+				E9E1ADD2A78CABA1BFEBB757 /* ReconstructionEngineTests.swift */,
+				BCE318917B05B3855968685A /* RichPointCloudTests.swift */,
+				41076AAA5BFB35AA9E9A57B7 /* RoomStructureCodecTests.swift */,
+				2395E9674EFA4F9C854E6420 /* ScanEngineTests.swift */,
+				0253493FEE8A097BDBACFC46 /* SequenceTrackerTests.swift */,
+				3B6DCD809AE4249314524908 /* StorageTests.swift */,
+				1A98F66F793575C3944641F2 /* SupportMessageTests.swift */,
+				163E843BA9103FAC9F589E3F /* SurfelAOTests.swift */,
+				82402CC30A1E1275E0801A02 /* SurfelCompactTests.swift */,
+				EC943E2B4D2FE5542735E81D /* SurfelDebtTests.swift */,
+				28649737F204BAE78A8CE96C /* SurfelDelightTests.swift */,
+				6A67A6BB51E31899EBB9F63E /* SurfelEngineTests.swift */,
+				5C355EB9C78FBA3AC48685D4 /* SurfelExtractorTests.swift */,
+				CA7336237C97286A0F818187 /* SurfelMapTests.swift */,
+				9AFAF0EE0F13A3E0328276E0 /* SurfelMesherTests.swift */,
+				13B6D72A41E9BA3A5FA7985C /* SurfelRefinementTests.swift */,
+				57A35D1F548F3ECBD1C018C8 /* TestSupport.swift */,
+				665823CDCDC5197981F45861 /* TextureBakerTests.swift */,
+				7FDD60D25F08A6C5B17A42AB /* TSDFVolumeTests.swift */,
+				ACEADE8A2057BE35713C0CA2 /* V2ReconstructionTests.swift */,
+				B479A36B084C87097E2716C6 /* ViewNavigationMathTests.swift */,
+				897E152CF9EC9AA370FD3842 /* WireCompressionTests.swift */,
+			);
+			path = LiDARLinkTests;
+			sourceTree = "<group>";
+		};
+		C9B0D2417E94CFA21E3FD011 = {
+			isa = PBXGroup;
+			children = (
+				8015F4633E1FB036BCB51960 /* LiDARLinkTests */,
+				14D70809F3830A6ED98B8C8B /* Packages */,
+				5B90C5758F948C036B337620 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE8290347B0C8AFDB3F95107 /* LiDARLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA256F08CE7B9ABA5C7B105 /* Build configuration list for PBXNativeTarget "LiDARLinkTests" */;
+			buildPhases = (
+				3716A66EF455C0E63D47B0C4 /* Sources */,
+				E385760263E7F666361EC128 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiDARLinkTests;
+			packageProductDependencies = (
+				38B9DBEB1EB8EF203311D805 /* LiDARLinkShared */,
+			);
+			productName = LiDARLinkTests;
+			productReference = 368E3F9BB79F65470966A37D /* LiDARLinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C589F9DEEF1386DDDF56280B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 937144F3A1ED8C3E3B4177E3 /* Build configuration list for PBXProject "LiDARLinkTests" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C9B0D2417E94CFA21E3FD011;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				49D0905360C3DA2515702BFE /* XCLocalSwiftPackageReference "../LiDARLinkShared" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5B90C5758F948C036B337620 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE8290347B0C8AFDB3F95107 /* LiDARLinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3716A66EF455C0E63D47B0C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9560894944761EB28BFD970E /* CornerExtractorTests.swift in Sources */,
+				9C219EAE83183AC0E5F0FDFB /* DeformationGraphTests.swift in Sources */,
+				CA1DD63DA47FD11A470BFA25 /* DepthCleanerTests.swift in Sources */,
+				C471E0A13B34B14E08B92DE6 /* DepthDownsamplerTests.swift in Sources */,
+				B22A5A399A85DD42C7FF7951 /* DepthEdgeFilterTests.swift in Sources */,
+				4168E22DC180FD3505C9C7E7 /* DepthSmootherTests.swift in Sources */,
+				5FA54F1BA111CC0F9A982B85 /* ExportTests.swift in Sources */,
+				A045A84F57DC26AA975CBA81 /* FrameAssemblerTests.swift in Sources */,
+				BD498347CB10941ED5ECD810 /* KeyframeDescriptorTests.swift in Sources */,
+				996EBE2152B6E04D4F3FED56 /* LatestWinsQueueTests.swift in Sources */,
+				5435D05EE056BA946552F0A2 /* LiveDriftCorrectorTests.swift in Sources */,
+				990C3104DDAD4DD1A51CCE8B /* LoopClosureDetectorTests.swift in Sources */,
+				8E0958C976E67626D89365E2 /* LoopbackStreamTests.swift in Sources */,
+				3B5D77A24822DD4CD3BBF225 /* MarchingCubesTests.swift in Sources */,
+				B8AF230726D5B84B0FCA32AA /* MeshChunkAssemblerTests.swift in Sources */,
+				92B7A4F313CF0D5E01B7EAA5 /* MeshDecimatorTests.swift in Sources */,
+				21882416C86477533C96ED02 /* MeshSimplifierTests.swift in Sources */,
+				9767BE79B76F5EAEB069BEF9 /* MessageCodecTests.swift in Sources */,
+				890EC90580397FE792674FD9 /* MotionGateTests.swift in Sources */,
+				1AA9B0AB5BE474AD327612E3 /* ObjectPhotoPayloadTests.swift in Sources */,
+				311535D18155F9D0007A9CC6 /* PlanePolygonBoundTests.swift in Sources */,
+				6B1AE6B3BD46CC70F32A8217 /* PlaneQuantizerTests.swift in Sources */,
+				E5543B92882E8DEF1B575BDD /* PointCloudAccumulatorTests.swift in Sources */,
+				0C22BF53207577A3B7908A03 /* PointCloudCleanerTests.swift in Sources */,
+				660557D080E2FC4FC289B672 /* PointColorizerTests.swift in Sources */,
+				0B37F2631EC069F24B4D8699 /* PointIndexNormalTests.swift in Sources */,
+				1A468286E62C4FF5CD826141 /* PoseGraphTests.swift in Sources */,
+				27A45C3C91F62F9E62B615DB /* PoseMatcherWarmupTests.swift in Sources */,
+				69162A7CC887B20AD5982277 /* PoseMathTests.swift in Sources */,
+				2B1DA91163FD7469D466E977 /* PoseRefinerTests.swift in Sources */,
+				F48F78440815F9E53427F2B6 /* ProgressiveMapCarveTests.swift in Sources */,
+				A7D58FC59207BE54C987F848 /* ProgressiveMapLifecycleTests.swift in Sources */,
+				63505472C9AE202D65DB8188 /* ProgressiveMapTests.swift in Sources */,
+				DA1315B809F3C1999AAE9112 /* ReconstructionEngineTests.swift in Sources */,
+				8804CC8BFC5A7F63730FBFC5 /* RichPointCloudTests.swift in Sources */,
+				855F1D52C5FFBCC4048B4ABC /* RoomStructureCodecTests.swift in Sources */,
+				58CBBA7BB5551EE791F900F4 /* ScanEngineTests.swift in Sources */,
+				124A8B1C5C674646E4E3A5D9 /* SequenceTrackerTests.swift in Sources */,
+				AE6A7C6E167C966B91D04CEB /* StorageTests.swift in Sources */,
+				25429431B6229E183F406ED1 /* SupportMessageTests.swift in Sources */,
+				69C766DC02F8A37FF2590BBF /* SurfelAOTests.swift in Sources */,
+				9189198A35B5BB496364876E /* SurfelCompactTests.swift in Sources */,
+				8EB793141290A45EEEE1D335 /* SurfelDebtTests.swift in Sources */,
+				C611A527D19815CE748EF39F /* SurfelDelightTests.swift in Sources */,
+				8BDBA16E9C28F68028197061 /* SurfelEngineTests.swift in Sources */,
+				408454EB50045976C7A80C9A /* SurfelExtractorTests.swift in Sources */,
+				2AB3E359C6EA17AEA99CC2D1 /* SurfelMapTests.swift in Sources */,
+				A021208A9581CD0363E51BF4 /* SurfelMesherTests.swift in Sources */,
+				A575544F440B294384C15F85 /* SurfelRefinementTests.swift in Sources */,
+				0B463E02B20610A0719D484C /* TSDFVolumeTests.swift in Sources */,
+				416FDA6D77E4AB6710D7AE07 /* TestSupport.swift in Sources */,
+				3966FD2BA5A4EBDEDFDD0DAE /* TextureBakerTests.swift in Sources */,
+				ADF04FA340EBE1A2B33F618A /* V2ReconstructionTests.swift in Sources */,
+				C56CCF843BC4BED6CBF5591B /* ViewNavigationMathTests.swift in Sources */,
+				8701430D6B8AE19ED307ABCD /* WireCompressionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05145E8C5361A0858E4F19FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0607899C89865B8A11D3EC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBonjourServices = _lidarlink._tcp;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "LiDARLinkTests connects to a loopback listener to verify the streaming protocol.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lidarlink.LiDARLinkTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		57B226D07B8E1D530669E534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBonjourServices = _lidarlink._tcp;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "LiDARLinkTests connects to a loopback listener to verify the streaming protocol.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lidarlink.LiDARLinkTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77165BBFD4F3F3FF6027E7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA256F08CE7B9ABA5C7B105 /* Build configuration list for PBXNativeTarget "LiDARLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0607899C89865B8A11D3EC1F /* Debug */,
+				57B226D07B8E1D530669E534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		937144F3A1ED8C3E3B4177E3 /* Build configuration list for PBXProject "LiDARLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77165BBFD4F3F3FF6027E7D7 /* Debug */,
+				05145E8C5361A0858E4F19FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		49D0905360C3DA2515702BFE /* XCLocalSwiftPackageReference "../LiDARLinkShared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LiDARLinkShared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38B9DBEB1EB8EF203311D805 /* LiDARLinkShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiDARLinkShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C589F9DEEF1386DDDF56280B /* Project object */;
+}

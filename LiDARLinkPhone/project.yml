@@ -1,0 +1,50 @@
+name: LiDARLinkPhone
+options:
+  bundleIdPrefix: com.lidarlink
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    MARKETING_VERSION: "2.0.0"
+    CURRENT_PROJECT_VERSION: "2"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+targets:
+  LiDARLinkPhone:
+    type: application
+    platform: iOS
+    sources:
+      - path: LiDARLinkPhone
+    info:
+      path: LiDARLinkPhone/Info.plist
+      properties:
+        CFBundleDisplayName: LiDAR Link
+        CFBundleShortVersionString: "2.0.0"
+        CFBundleVersion: "2"
+        UILaunchScreen: {}
+        NSCameraUsageDescription: "LiDAR Link uses the camera and LiDAR scanner to capture 3D scans that you choose to stream to the LiDAR Link Mac app on your local network."
+        NSLocalNetworkUsageDescription: "LiDAR Link connects to the LiDAR Link Mac app on your local Wi-Fi network to stream scans. Scan data never leaves your local network."
+        NSBonjourServices:
+          - _lidarlink._tcp
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+          - UIInterfaceOrientationPortraitUpsideDown
+        ITSAppUsesNonExemptEncryption: false
+    dependencies:
+      - package: LiDARLinkShared
+packages:
+  LiDARLinkShared:
+    path: ../LiDARLinkShared
+schemes:
+  LiDARLinkPhone:
+    build:
+      targets:
+        LiDARLinkPhone: all
+    run:
+      config: Debug
