@@ -267,6 +267,8 @@ final class PhoneAppState: ObservableObject {
         adaptiveTask = nil
         arController?.stop()
         arController = nil
+        roomController?.stop()
+        roomController = nil
         processor = nil
         scanState = .idle
         captureQuality = CaptureQualitySnapshot()
@@ -397,8 +399,12 @@ final class PhoneAppState: ObservableObject {
         }
     }
 
+    /// RoomPlan owns the AR session while a room capture is active, so
+    /// `ARSessionController.pause`/`resume` are no-ops in that mode.
+    var canPause: Bool { roomController == nil }
+
     func pauseScan() {
-        guard scanState == .running else { return }
+        guard scanState == .running, canPause else { return }
         arController?.pause()
         scanState = .paused
         sendControl(.pause)

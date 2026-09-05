@@ -24,7 +24,7 @@ final class ExportController {
     }
 
     static func exportMeshOBJ(mesh: MeshData, completion: @escaping (Result<URL, Error>) -> Void) {
-        exportMesh(mesh: mesh, filename: "LiDARLinkMesh.obj", extension: "obj", export: { try ScanExporter.exportMeshOBJ(mesh, to: $0) }, completion: completion)
+        exportMesh(mesh: mesh, filename: "LiDARLinkMesh.obj", extension: "obj", export: { try ScanExporter.exportMeshOBJ(mesh, to: $0); return $0 }, completion: completion)
     }
 
     /// The scan as a classified LAS 1.2 + enhanced binary PLY.
@@ -54,7 +54,7 @@ final class ExportController {
 
     static func exportMeshUSDZ(mesh: MeshData, completion: @escaping (Result<URL, Error>) -> Void) {
         exportMesh(mesh: mesh, filename: "LiDARLinkMesh.usdz", extension: "usdz") { url in
-            _ = try ScanExporter.exportMeshUSDZ(mesh, to: url, fallbackToUSD: true)
+            try ScanExporter.exportMeshUSDZ(mesh, to: url, fallbackToUSD: true)
         } completion: { result in
             completion(result)
         }
@@ -63,7 +63,7 @@ final class ExportController {
     private static func exportMesh(mesh: MeshData,
                                    filename: String,
                                    extension fileExtension: String,
-                                   export: @escaping (URL) throws -> Void,
+                                   export: @escaping (URL) throws -> URL,
                                    completion: @escaping (Result<URL, Error>) -> Void) {
         let panel = NSSavePanel()
         panel.allowedContentTypes = [UTType(filenameExtension: fileExtension) ?? .data]
@@ -72,8 +72,8 @@ final class ExportController {
             guard response == .OK, let url = panel.url else { return }
             DispatchQueue.global(qos: .userInitiated).async {
                 do {
-                    try export(url)
-                    DispatchQueue.main.async { completion(.success(url)) }
+                    let writtenURL = try export(url)
+                    DispatchQueue.main.async { completion(.success(writtenURL)) }
                 } catch {
                     DispatchQueue.main.async { completion(.failure(error)) }
                 }

@@ -263,15 +263,17 @@ struct ContentView: View {
                 if appState.scanState == .idle {
                     startScanButton
                 } else if appState.scanState == .running {
-                    Button {
-                        appState.pauseScan()
-                    } label: {
-                        Label("Pause", systemImage: "pause.fill")
-                            .font(.callout.weight(.medium))
-                            .frame(minWidth: 90)
+                    if appState.canPause {
+                        Button {
+                            appState.pauseScan()
+                        } label: {
+                            Label("Pause", systemImage: "pause.fill")
+                                .font(.callout.weight(.medium))
+                                .frame(minWidth: 90)
+                        }
+                        .buttonStyle(.bordered)
+                        .tint(.white)
                     }
-                    .buttonStyle(.bordered)
-                    .tint(.white)
                     stopButton
                 } else {
                     Button {
