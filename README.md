@@ -3,6 +3,22 @@
 Stream LiDAR depth, color, and scene mesh from an iPhone Pro to a Mac in real
 time, fuse it into a world-space point cloud, and export it.
 
+## Screenshots
+
+<p>
+  <img src="Screenshots/staircase.webp" width="49%" alt="Live scan of a staircase, walk-camera view">
+  <img src="Screenshots/room-detail.webp" width="49%" alt="Live scan of a room corner with a door and thermostat">
+</p>
+<p>
+  <img src="Screenshots/roomplan-overlay.webp" width="49%" alt="RoomPlan wireframe overlay before scanning starts">
+  <img src="Screenshots/staircase-app-ui.webp" width="49%" alt="Staircase scan with the Mac app's Map panel visible">
+</p>
+
+Left to right, top to bottom: a live walk-camera view mid-scan; a room corner
+with real detail (door, thermostat) held together by loop closure; the
+RoomPlan wall/opening overlay registered against the live cloud before a scan
+starts; and the same staircase with the Mac app's controls in frame.
+
 ## Layout
 
 | Path | What it is |
