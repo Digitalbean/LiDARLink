@@ -6,12 +6,12 @@ time, fuse it into a world-space point cloud, and export it.
 ## Screenshots
 
 <p>
-  <img src="Screenshots/staircase.webp" width="49%" alt="Live scan of a staircase, walk-camera view">
-  <img src="Screenshots/room-detail.webp" width="49%" alt="Live scan of a room corner with a door and thermostat">
+  <img src="Screenshots/staircase.jpg" width="49%" alt="Live scan of a staircase, walk-camera view">
+  <img src="Screenshots/room-detail.jpg" width="49%" alt="Live scan of a room corner with a door and thermostat">
 </p>
 <p>
-  <img src="Screenshots/roomplan-overlay.webp" width="49%" alt="RoomPlan wireframe overlay before scanning starts">
-  <img src="Screenshots/staircase-app-ui.webp" width="49%" alt="Staircase scan with the Mac app's Map panel visible">
+  <img src="Screenshots/roomplan-overlay.jpg" width="49%" alt="RoomPlan wireframe overlay before scanning starts">
+  <img src="Screenshots/staircase-app-ui.jpg" width="49%" alt="Staircase scan with the Mac app's Map panel visible">
 </p>
 
 Left to right, top to bottom: a live walk-camera view mid-scan; a room corner
