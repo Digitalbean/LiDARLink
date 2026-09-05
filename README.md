@@ -1,7 +1,9 @@
 # LiDARLink
 
-Stream LiDAR depth, color, and scene mesh from an iPhone Pro to a Mac in real
-time, fuse it into a world-space point cloud, and export it.
+Turn a LiDAR iPhone into a live 3D scanner. LiDARLink streams ARKit depth,
+color, and mesh from an iPhone Pro to a Mac over Wi-Fi or USB, fuses it in
+real time into a walkable, loop-closed world-space point cloud, and exports
+it to LAS, PLY, OBJ, or USDZ.
 
 ## Screenshots
 
